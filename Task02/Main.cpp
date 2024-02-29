@@ -9,6 +9,7 @@ void random_init(int* vector, int size, int bound);
 int product_of_even_elements(int* vector, int size);
 
 int find_min_element(int* vector, int size);
+int find_max_element(int* vector, int size);
 
 int main() {
 	int size;
@@ -27,7 +28,7 @@ int main() {
 
 	cout << "Min: " << find_min_element(vector, size) << endl;
 
-	cout << "DSD"
+	cout << "Max: " << find_max_element(vector, size) << endl;
 
 	delete[] vector;
 
