@@ -1,25 +1,20 @@
-int number_of_positive_numbers(int* vector, int size) {
-    int counter = 0;
-    for (int i = 0; i < size; i++) {
-        if (vector[i] > 0) {
-            counter++;
-        }
+int product_of_even_elements(int* vector, int size) {
+    int product = 1;
+
+    for (int i = 0; i < size; i += 2) {
+        product *= *(vector + i);
     }
-    return counter;
+
+    return product;
 }
 
-int product_of_elements(int* vector, int size) {
-    int sum = 0;
-    bool zero = false;
-
+int find_min_element(int* vector, int size) {
+    int min;
     for (int i = 0; i < size; i++) {
-        if (zero) {
-            sum += *(vector + i);
-        }
-
-        if (*(vector + i) == 0) {
-            zero = true;
-            sum = 0;
+        int element = *(vector + i);
+        if (*(vector + i) < element) {
+            min = vector[i];
         }
     }
+    return min;
 }

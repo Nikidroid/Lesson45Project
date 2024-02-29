@@ -6,8 +6,9 @@ string vector_to_string(int* vector, int size);
 
 void random_init(int* vector, int size, int bound);
 
-int number_of_positive_numbers(int* vector, int size);
-int sum_of_elements(int* vector, int size);
+int product_of_even_elements(int* vector, int size);
+
+int find_min_element(int* vector, int size);
 
 int main() {
 	int size;
@@ -22,9 +23,11 @@ int main() {
 
 	cout << vector_to_string(vector, size) << endl;
 
-	cout << "Number of positive numbers: " << number_of_positive_numbers(vector, size);
+	cout << "Product of even elements: " << product_of_even_elements(vector, size) << endl;
 
-	cout << "Sum of positive elements: " << sum_of_elements(vector, size) << endl;
+	cout << "Min: " << find_min_element(vector, size) << endl;
+
+	cout << "DSD"
 
 	delete[] vector;
 
