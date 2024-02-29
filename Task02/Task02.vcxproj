@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{51452013-fcc9-4758-a11e-07d6aa5cae17}</ProjectGuid>
-    <RootNamespace>Task01</RootNamespace>
+    <ProjectGuid>{9631e761-995f-4a08-99f2-910d0da72715}</ProjectGuid>
+    <RootNamespace>Task02</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Lesson45</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,10 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Task01.cpp" />
-    <ClCompile Include="Test01.cpp" />
-    <ClCompile Include="Test02.cpp" />
-    <ClCompile Include="Test03.cpp" />
+    <ClCompile Include="..\Homework\Util.cpp" />
+    <ClCompile Include="Logic.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
